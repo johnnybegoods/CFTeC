@@ -73,3 +73,12 @@ CREATE TABLE public.type
     nome character varying(150),
     CONSTRAINT type_pkey PRIMARY KEY (codigo)
 );
+
+--Responsavel: Johny Jefferson
+CREATE TABLE collaborator
+(
+  codigo integer NOT NULL,
+  nome character varying(50),
+  data_nascimento date,
+  CONSTRAINT collaborator_pkey PRIMARY KEY (codigo)
+)
