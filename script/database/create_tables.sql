@@ -92,3 +92,14 @@ codigo INTEGER NOT NULL,
 nome CHAR(100),
 CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
 );
+
+--Responsavel: Johny JEfferson
+CREATE TABLE collaborator(
+  codigo integer NOT NULL,
+  nome character varying(50),
+  data_nascimento date,
+  CONSTRAINT collaborator_pkey PRIMARY KEY (codigo),
+  CONSTRAINT collaborator_codigo_fkey FOREIGN KEY (codigo)
+      REFERENCES hosttype (codigo) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
