@@ -66,7 +66,7 @@ CREATE TABLE public.arctifact
 (
 	codigo integer not null,
 	artefato character varying(200),
-	constraint codigo_pkey primary key (codigo)
+	constraint artifact_pkey primary key (codigo)
 );
 
 --Responsavel: Gabriel Tobias
@@ -82,7 +82,7 @@ CREATE TABLE public.adress
 (
 codigo INTEGER NOT NULL,
 logradouro TEXT,
-CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
+CONSTRAINT adress_pkey PRIMARY KEY (codigo)
 );
 
 --Responsavel: Arcádio Macedo
@@ -90,7 +90,7 @@ CREATE TABLE public.postalcode
 (
 codigo INTEGER NOT NULL,
 nome CHAR(100),
-CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
+CONSTRAINT postalcode_pkey PRIMARY KEY (codigo)
 );
 
 --Responsavel? Francisco Xavier
