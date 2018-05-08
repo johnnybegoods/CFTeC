@@ -92,3 +92,12 @@ codigo INTEGER NOT NULL,
 nome CHAR(100),
 CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
 );
+
+--Responsavel? Francisco Xavier
+CREATE TABLE public.purpose
+(
+codigo INTEGER NOT NULL,
+nome varchar(45), 
+descrição varchar(120),
+CONSTRAINT purpose_pkey PRIMARY KEY (codigo)
+);
