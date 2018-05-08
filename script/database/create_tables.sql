@@ -101,3 +101,15 @@ nome varchar(45),
 descrição varchar(120),
 CONSTRAINT purpose_pkey PRIMARY KEY (codigo)
 );
+
+
+--Responsavel? Johny Jefferson
+CREATE TABLE collaborator
+(
+  codigo integer NOT NULL,
+  nome character varying(50),
+  data_nascimento date,
+  CONSTRAINT collaborator_pkey PRIMARY KEY (codigo),
+  CONSTRAINT collaborator_codigo_fkey FOREIGN KEY (codigo)
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
